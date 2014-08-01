@@ -1,17 +1,72 @@
 doctype html
 html
-	head
-		title Eric Cutler
-		if stylesheets
-			each css in stylesheets
-				link(rel="stylesheet", href=css.href, type="text/css")
-
-		script(src="js/lib/jquery.min.js")
-		script(src="js/lib/jquery-ui.min.js")
-
-		if scripts
-			each js in scripts
-				script(src=js.src)	
+	include ./fragments/head.jade
 	body
 		div.root
 			h1 Eric Cutler
+			p.
+				My name is Eric Cutler, and I have been working as a Web developer for 6 years. 
+				I'm self-motivated, technically savvy, and mostly self-taught. 
+
+			h2 Work Experience
+			h3 Junior Web Developer - Pure Web Development, Inc. 2008 - 2011
+			p.
+				I was tasked with rebuilding many websites for our clients based on artist mock-ups or comparisons. The software used varied from an inhouse CMS, to Joomla!, to Concrete5. I focused on writing clear and readable code, due to many other co-workers needing to reference it.
+			h3 Senior Web Developer - PureWeb LLC, 2011 - 2014
+			p.
+				I was creating entire websites from artist mock-ups on various platforms, or custom systems form-fit for the client. Often custom add-ons or plugins ware made for the CMS in question to allow maximum control or configuration.
+			p.
+				I was also tasked with upgrading the customer portal, and keeping the web servers working properly via SSH access, and keeping system security running smoothly.
+			h3 Tech / Web Developer – Sylvane Inc, 2014 – Present
+			p.
+				I am in a team of developers working to keep the company website running. It is a custom solution using many 3rd party systems such as Netsuite to handle order management for the e-commerce side. 
+			p.
+				I have been working primarily with creating adapters for 3rd party services, such as Fedex and Riskified, as well as Omniture analytics on a multitude of triggers, from page loads to video plays.
+			h2 Professional Skills
+			p.
+				Many, if not all, of the software and languages I have learned has been self-taught, much of it for or due to personal side projects.
+
+			div.third
+				h2 Software
+				ul
+					li.expert Photoshop
+					li.expert Apache
+					li.expert Node.js
+					li.advanced MySQL
+					li.intermediate After Effects
+					li.intermediate Git
+					li.intermediate Mercurial
+					li.intermediate Unity
+					li.beginner Flash
+				
+			div.third
+				h2 Languages
+				ul
+					li.expert HTML5 / CSS
+					li.expert PHP
+					li.expert JavaScript + jQuery
+					li.advanced SQL
+					li.advanced Bash
+					li.advanced Java
+					li.advanced C#
+					li.intermediate Python
+					li.intermediate C/C++
+				
+			div.third
+				h2 Concepts
+				ul
+					li Object-Oriented Programming
+					li Websockets
+					li MCV Software Architecture
+					li Version Control Systems
+						ul
+							li Git
+							li Mercurial
+					li Software Security
+						ul
+							li SQL-Injection
+							li XSS
+							li Data Encryption
+			h2 Education
+			p.
+				I expect to be receiving a Bachelors Degree in Computer Science in the fall of 2014 from Southern Polytechnic State University.

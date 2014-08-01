@@ -101,7 +101,7 @@ module.exports = function(grunt) {
 					'!**/*.jade',
 					'!**/*.js',
 					//'**/*.min.js',
-					'!**/elements/**'
+					'!**/fragments/**'
 				],
 				dest: 'dist',
 				expand: true
@@ -148,7 +148,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: 'src',
-					src: [ '**/*.jade', '!**/elements/**' ],
+					src: [ '**/*.jade', '!**/fragments/**' ],
 					dest: 'dist',
 					ext: '.html'
 				}]
