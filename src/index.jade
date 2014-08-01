@@ -1,0 +1,17 @@
+doctype html
+html
+	head
+		title Eric Cutler
+		if stylesheets
+			each css in stylesheets
+				link(rel="stylesheet", href=css.href, type="text/css")
+
+		script(src="js/lib/jquery.min.js")
+		script(src="js/lib/jquery-ui.min.js")
+
+		if scripts
+			each js in scripts
+				script(src=js.src)	
+	body
+		div.root
+			h1 Eric Cutler
